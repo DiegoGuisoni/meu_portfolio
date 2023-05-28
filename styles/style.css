@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap%27');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --font-primaria: 'Poppins', sans-serif;
+    
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh;    comando para utilizar pagina inteira */
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 14%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    color: var(--cor-terciaria);
+    font-family: var(--font-primaria);
+    font-weight: 300;
+    font-size: 1.38rem;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    background-color: var(--cor-hover);
+}
+
+.apresentacao {
+    margin: 0 10% 5% 10%;
+    display: flex;  /* coloca os quadrados lado a lado */
+    flex-direction: row; /*direção dos itens*/
+    align-items: center; /* onde os itens serão alinhados */
+    justify-content: space-between; /* espaçamento entre os itens */
+    }
+
+.apresentacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 50%;
+    gap: 30px;
+}
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 1.38rem;
+    font-weight: 300;
+    font-family: var(--font-primaria);
+    text-align: justify;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 2rem;
+    
+}
+
+.apresentacao_links_navegacao {
+    /* background-color: #22D4FD; código anteriormente para ficar botão todo azul*/
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.38rem;
+    font-weight: 300;
+    padding: 1.37rem;
+    text-decoration: none;
+    font-family: var(--font-primaria);
+}
+
+.apresentacao_links_navegacao:hover { /* ''hover'' altera quando o mouse passar por cima dos botões*/
+    background-color: var(--cor-hover);
+    padding: 3%;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor-terciaria);
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+.rodapeTexto {
+    color: var(--cor-primaria);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--font-primaria);
+}
+
+/*about */
+
+.about {
+    margin: 0 10% 5% 10%;
+    display: flex;  /* coloca os quadrados lado a lado */
+    flex-direction: row; /*direção dos itens*/
+    align-items: center; /* onde os itens serão alinhados */
+    justify-content: space-between; /* espaçamento entre os itens */
+}
+.apresentacao__about {
+    gap: 31px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 50%;
+}
+
+.apresentacao__about__titulo {
+    font-size: 2rem;
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    
+}
+
+.destaque__alura {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-weight: bold;
+}
+.destaque__alura:hover {
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__about__paragrafo{
+    font-size: 1.31rem;
+    font-family: var(--font-primaria);
+    font-weight: 300;
+}
+
+/* Qualification*/
+.destaque__udemy {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.destaque__udemy:hover {
+    background-color: var(--cor-hover);
+}
+/* Qualification */
+
+.section_foto__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.foto__img {
+    width: 70%;
+    border-radius: 10%;
+    border: 2px solid var(--cor-terciaria);
+}
+
+@media (max-width: 1200px) {
+    
+    .cabecalho {
+        padding: 10% 0% 5% 0%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 0% 0% 5% 0%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+/*@media about*/
+
+    .about {
+        flex-direction: column-reverse;
+     }
+
+     .apresentacao__about {
+        width: auto;
+     }
+
+}
+
